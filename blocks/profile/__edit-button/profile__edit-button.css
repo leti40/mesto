@@ -9,3 +9,8 @@
     background-repeat: no-repeat;
     grid-area: profile__edit-button;
 }
+
+.profile__edit-button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
