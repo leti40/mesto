@@ -7,6 +7,6 @@
         grid-template-columns: 1fr 22px;
         gap: 10px;
         text-overflow: ellipsis;
-        white-space: nowrap; 
+        white-space: nowrap;
         overflow: hidden;
     }
