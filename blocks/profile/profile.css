@@ -1,9 +1,30 @@
 .profile {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     align-items: center;
-    row-gap: 30px;
-    justify-content: space-between;
-    width: 880px;
-    margin: 40px auto 0 auto;
+    column-gap: 30px;
+    row-gap: 16px;
+    margin-top: 40px;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-areas: "profile__avatar profile__info profile__add-button";
+}
+
+
+@media screen and (max-width: 900px) {
+    .profile {
+        margin: 40px 45px 0 45px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .profile {
+        row-gap: 0;
+        margin: 40px auto 0 auto;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: "profile__avatar"
+                             "profile__info"
+                             "profile__add-button";
+                            
+    }
 }
