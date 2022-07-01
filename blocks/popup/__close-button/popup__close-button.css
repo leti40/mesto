@@ -11,3 +11,15 @@ background-image: url(../../../images/Close\ Icon.svg);
     background-color: transparent;
     grid-area: popup__close-button;
 }
+
+.popup__close-button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .popup__close-button {
+        width: 20px;
+        height: 20px;
+    }
+}
